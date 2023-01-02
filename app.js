@@ -6,8 +6,10 @@ const app = express();
 
 app.use(express.static(path.resolve(__dirname,"public")));
 
-app.listen(3001, ()=>{
-    console.log("Server Encendido")
+const PORT = process.env.PORT || 3001;
+
+app.listen(PORT, ()=>{
+    console.log(`Se en el puerto ${PORT}`);
 });
 
 //VERBO "GET" HTTP
