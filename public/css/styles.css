@@ -1,0 +1,213 @@
+/* 
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;
+*/
+
+*{margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;}
+
+.header-pagina {
+    background-color: #EAC926;
+
+}
+
+.header-pagina section ul li {
+    list-style: none;
+}
+.nav-link{
+    color: #000;
+    text-decoration: none;
+}
+
+
+.txt-center{text-align: center;}
+
+
+.logo-pag{width: 50%;}
+
+.buscador{width: 45%; height: 30px;}
+
+.seccion-views-header{margin-bottom: 10px;
+display: none;}
+
+.seccion-usuario{
+    display: none;
+}
+
+.bg-whithe{background-color: white;}
+
+.lupa{background-color:#ebebeb;
+border: 1px solid #666;;
+border-radius: 3px;
+height: 30px;
+}
+
+body{
+font-size: 12px;
+background-color: #ebebeb;}
+
+.footer-pos{position: relative; top: 100px;}
+
+
+
+main{ width: 90%;
+margin: auto;
+}
+
+.flex-wrap{display: flex;
+flex-wrap: wrap;}
+
+.truck-icon {
+    color: rgb(4, 181, 4);
+    border: rgb(4, 181, 4) solid 1px;
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    right: 15px;
+    top: -15px;
+    font-size: 20px;
+  }
+
+.titulares{font-size: 24px;
+text-align: center;}
+
+.precio{font-size: 18px; width: 60%;}
+
+.descuento{font-size: 16px;
+color: rgb(4, 181, 4); width: 38%;}
+
+.bars-item{background-color: #03264C;
+color: white;
+padding: 10px;
+border-radius: 3px;
+margin-left: 45%;
+margin-bottom: 20px;}
+
+#buscador{margin: 5%; }
+
+footer section{
+text-align: center;
+margin-bottom: 20px;}
+
+.icon-footer{color: blue;
+font-size: 2em;
+margin-bottom: 10px;
+}
+
+form{display: flex;
+flex-wrap: wrap;
+align-items: center;}
+
+.margen-auto{margin: auto;}
+
+.div-info{border-top: 1px solid #ebebeb;
+padding: 15px;
+position: relative;
+display: none;
+background-color: white;
+
+}
+
+.w-100{width: 100%;}
+
+.borde-gris{border: 2px solid #666;}
+
+.register-form{ justify-content: center; text-align: center;
+border-radius: 5px; margin-top: 20px; margin-bottom: 20px; padding: 5px;}
+
+.fuente-form{font-size: 16px;}
+
+.mrg5{margin: 5px;}
+
+.login{ justify-content: center; flex-direction: column;}
+
+.mrg20{margin: 20px;}
+
+.w-35{width: 35%;}
+
+.boton-login{background-color: blue; color: #fff;}
+
+.boton-login:hover{background-color: #0022AA;}
+
+
+@media(min-width: 481px){
+    /* Tablets */
+.articulo{
+margin-bottom: 10px;
+}
+
+.bars-item{display: none;}
+
+.seccion-views-header{display:contents;}
+
+.seccion-usuario{display: contents;}
+
+.div-info{display: flex}
+
+.w-50{width: 48%;}
+
+.w-32{width: 32%;}
+
+.buscador{width: 20%; margin-left: 20px; margin-right: 20px; position: relative; top: 15px;}
+
+.lupa{ position: relative; top: 15px; right: 20px;}
+
+
+header section ul{display: flex; margin: auto;}
+
+.register-form{width: 80%; margin-left: 10%;}
+
+.login{width: 80%; margin-left: 10%;}
+
+}
+
+@media(min-width: 769px){
+    /* Laptop */
+    .articulo:hover .descripcion{
+        display: block;
+        transition: 500ms;
+      }
+      .articulo:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+      }
+      .articulo:hover .truck-icon{
+       animation: vuelta-camion 1000ms ;
+      }
+      
+      .register-form{ width: 60%; margin-left: 20%;}
+
+      .login{ width: 60%; margin-left: 20%;}
+}
+
+@media (min-width: 1281px) {
+    /*desktop*/
+    .w-25{width: 23%;}
+
+    .register-form{ width: 40%; margin-left: 30%;}
+
+    .login{ width: 40%; margin-left: 30%;}
+
+    .footer-desk{display: flex; flex-wrap: wrap; align-content: center;}
+
+    .pdd-10{padding: 10px;}
+
+    .footer-desk-w{width: 30%;}
+}
+
+@keyframes vuelta-camion {
+    0%{
+      transform: rotate(0deg);
+    }
+    
+    100%{
+      transform: rotate(-360deg);
+    }
+  }
+
+
+
