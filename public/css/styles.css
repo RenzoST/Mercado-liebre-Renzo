@@ -81,6 +81,8 @@ text-align: center;}
 .descuento{font-size: 16px;
 color: rgb(4, 181, 4); width: 38%;}
 
+.descripcion{display: none;}
+
 .bars-item{background-color: #03264C;
 color: white;
 padding: 10px;
